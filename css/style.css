@@ -1,0 +1,355 @@
+/* Universal css rule*/
+* {
+  
+}
+
+/* Web Fonts*/
+body {
+    font-family: 'Work Sans', sans-serif;
+    color: #454959;
+    font-weight: 300;
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+#footer{
+    flex:1;
+}
+/* Base Styles */
+
+h1{
+    text-align: center;
+    margin-top: 0px;
+
+}
+a{
+    text-decoration: none;
+
+}
+/* Nav */
+.main-nav{
+    padding-inline-start: 0px;
+    padding: 15px;
+    display: flex;
+}
+.container{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.item{
+    padding: 5px;
+    display: flex;
+    border: rgb(0, 0, 0);
+    display: block;
+    background: rgba(87, 86, 86, 0.105);
+    justify-content: space-between;
+    border-radius: 10px 0 10px 0;
+    width: 250px;
+}
+.item-1{
+    margin-bottom: 2.5px;
+    
+}
+.item-2{
+    margin-bottom: 2.5px;
+    
+}
+.item-3{
+    margin-bottom: 2.5px;
+  
+}
+
+/* header */
+.marketing{
+    box-shadow: 5px 5px 5px 5px rgba(41, 41, 41, 0.221);
+    margin-bottom: 25px ;
+    padding: 10px 10px;
+    width: 200px;
+}
+.search{
+    box-shadow: 5px 5px 5px 5px rgba(41, 41, 41, 0.221);
+    margin-bottom: 25px;
+    padding: 10px 10px;
+    width: 200px;
+}
+.Travel{
+    box-shadow: 5px 5px 5px 5px rgba(41, 41, 41, 0.221);
+    margin-bottom: 25px ;
+    padding: 10px 10px;
+    width: 200px;
+}
+.Map{
+    box-shadow: 5px 5px 5px 5px rgba(41, 41, 41, 0.221);
+    margin-bottom: 25px;
+    padding: 10px 10px;
+    width: 200px;
+}
+.Photo{
+    box-shadow: 5px 5px 5px 5px rgba(41, 41, 41, 0.221);
+    margin-bottom: 25px ;
+    padding: 10px 10px;
+    width: 200px;
+}
+.Calculator{
+    box-shadow: 5px 5px 5px 5px rgba(41, 41, 41, 0.221);
+    margin-bottom: 25px ;
+    padding: 10px 10px;
+    width: 200px;
+}
+/* main and Section */
+main, section {
+    
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 67vw;
+    flex-direction: column;
+    text-align: center; 
+    max-width: 80vw ;
+}
+
+.main{
+    background: rgba(220, 216, 216, 0.201);
+    width: 300px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px 5px rgba(41, 41, 41, 0.221);
+
+
+}
+
+.Portfolio{
+    padding: 30px 30px;
+
+
+}
+/* Footer*/
+.dotted{
+border: none; border-bottom:1px dotted rgba(0, 0, 0, 0.221);
+padding-bottom: 50px;
+}
+
+footer{
+    background: rgba(220, 216, 216, 0.201);
+}
+footer p, footer h1{
+    text-align: center;
+   font-size: 10px;
+}
+footer{
+  padding-top: 20px;
+}
+
+.btp{
+    display: flex;
+    justify-content: space-around;
+    width: 300px;
+}
+#back{
+    justify-content: flex-end;
+
+
+}
+.top{
+    justify-content:flex-start;
+}
+button{
+
+    border-radius: 10px 0 10px 0;
+    box-shadow: 5px 5px 5px 5px rgba(213, 202, 202, 0.242);
+    background: rgba(80, 78, 78, 0.084);
+    color:black;
+    height: 20px;
+}
+ h5{
+
+    margin-top: 0;    
+}
+
+/* Image */
+img {
+
+
+}
+
+
+/* Containers */
+
+     
+
+/* main queries For Mobile 320 Px */
+
+
+
+@media screen and (min-width: 320px) {
+
+    .header, .main-nav{
+       display: flex; 
+       flex-direction: column;
+       align-items: center;
+    }
+    
+
+}
+@media screen and (max-width: 768px){
+    #trio{
+        display: none;
+    }
+}
+/* main queries For Tablet 768 Px */
+@media screen and (min-width: 768px) {
+   /* Header */
+    header p{
+        text-align: left;
+    }
+    .header, .main-nav{      
+        display: flex;
+      
+    }
+    .main-nav{
+        flex-direction: row;
+        width: 550px;
+        padding-top: 5px;
+        margin-top: 0px;
+        justify-content: space-evenly;
+    }
+    .main{
+      width: 760px; 
+      height: 300px;
+    }
+    .item-1{
+        margin-right: 20px;
+    }
+    .item-2{
+
+    }
+    .item-3{
+        margin-left: 20px;
+    }
+    .profile-container{
+        display:flex;
+        flex-direction: row-reverse;
+    }
+     img {
+       padding: 5px;
+
+
+    }
+    header p {
+
+        align-items: flex-start;
+    }
+
+/*section*/
+    .icons{
+
+        display:flex;
+        flex-wrap: wrap;
+       justify-content: space-around;
+       -ms-flex-align: center;
+       flex-direction: column 2fr ;
+       max-width: 100%;
+       
+    }
+    .btp{
+    width:750px;
+
+    }
+
+/* footer */
+.contact  {
+    display:flex;
+    flex-direction: column;
+}
+.contact p {
+    font-size: 16px;
+
+    justify-content: center;
+       
+}
+
+    footer p {
+        font-size: 16px;
+        line-height:1em;
+        text-align:center;
+     
+    }
+    footer h1{
+        font-size: 16px;
+        padding: 25px 0px 20px 0px;
+    }
+
+    #back{
+        display: none;
+    }
+    
+
+}
+/* main queries For Desktop 1024 Px */
+@media screen and (min-width: 1024px) {
+    .btp{
+        width: 1000px;
+       
+        }
+        .icons{
+           justify-content: space-between;
+
+        }
+        .main{
+            width: 1000px;
+            margin-top: 5px;
+            height:375px;
+        }
+        .profile-container{
+            margin-top: 10px;
+            width:800px;
+        }
+       #intro{
+           width: 400px;
+       }
+       header img{
+           width: auto;
+           height: auto;
+       }
+       main h1{
+           font-size:20px;
+           width: 200px;
+       }
+       header{
+           display:flex;
+       }
+       .container{
+           width:350px;
+           margin: 0px;
+           align-self: end;
+           margin-right: 40px;   
+       }
+       .main-nav{
+            flex-direction: row;
+        }
+       .item{
+           width: 100px;
+       }
+       .item-1{
+           margin-right: 20px;
+       }
+       .item-2{
+           margin: 0px;
+       }
+       .item-3{
+           margin-left: 20px;
+       }
+       main h1, .main-nav{
+           display: inline-flex;
+           flex-direction: row;
+       }
+       
+
+       
+
+}
